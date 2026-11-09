@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head & Neck Cancers | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Expert surgical care for head and neck cancers at Phoenix Cancer Clinic, Satara. Specializing in thyroid, parotid, and laryngeal cancer surgeries by Dr. Dhiraj Khadkaban.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Head & Neck Cancer page */
+        .procedure-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+            transition: var(--transition);
+            height: 100%;
+        }
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .procedure-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .procedure-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+        .procedure-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .symptom-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .symptom-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--gray);
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .symptom-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+        .faq-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .function-highlight {
+            background: linear-gradient(to right, #fdfbf9, #ffffff);
+            border-left: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 0 10px 10px 0;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Head & Neck Cancers</h2>
+        <p class="page-subtitle">Thyroid & Throat Cancer Surgery</p>
+
+        <!-- Intro Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--accent); background: linear-gradient(to right, #fdfbf9, #ffffff);">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray); margin-bottom: 15px;">
+                The head and neck region is one of the most complex areas of the human body, containing vital structures responsible for breathing, swallowing, speaking, and facial expressions. When cancer develops here, surgical removal requires extreme precision.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray);">
+                At Phoenix Cancer Clinic, Dr. Khadkaban brings specialized expertise in head and neck oncology. Our goal is not only to remove the cancer completely but to preserve your vital functions and quality of life to the highest degree possible.
+            </p>
+        </div>
+
+        <!-- Symptoms & Risk Factors -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Signs, Symptoms & Risk Factors</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Early detection is critical in the head and neck region</p>
+
+        <div class="grid-2" style="margin-bottom: 50px;">
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-triangle-exclamation"></i> When to see a doctor:</h4>
+                <ul class="symptom-list">
+                    <li><i class="fa-solid fa-circle-dot"></i> A lump or swelling in the neck, thyroid, or jaw.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Persistent hoarseness or changes in your voice lasting more than two weeks.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Difficulty swallowing (dysphagia) or a feeling that food is sticking in your throat.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Persistent sore throat or ear pain.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Unexplained coughing or difficulty breathing.</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-ban"></i> Major Risk Factors:</h4>
+                <ul class="symptom-list">
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Tobacco & Alcohol:</strong> The combination significantly increases the risk of throat and laryngeal cancers.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>HPV Infection:</strong> Strongly linked to oropharyngeal cancers (tonsils and base of tongue).</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Radiation Exposure:</strong> Previous radiation to the head and neck area increases thyroid cancer risk.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Family History:</strong> Genetic syndromes like MEN2 can cause medullary thyroid cancer.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Surgical Procedures (Grid) -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Surgical Procedures Offered</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Specialized surgeries for thyroid, salivary, and throat cancers</p>
+
+        <div class="grid-3">
+            <div class="procedure-card">
+                <i class="fa-solid fa-shield-virus"></i>
+                <h3>Thyroidectomy</h3>
+                <p>The surgical removal of the thyroid gland for thyroid cancer. Depending on the size and type of tumor, Dr. Khadkaban may perform a partial (lobectomy) or total thyroidectomy. This procedure often utilizes advanced nerve monitoring to protect the vocal cords.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-face-smile"></i>
+                <h3>Parotidectomy</h3>
+                <p>The surgical removal of the parotid gland (the largest salivary gland) for tumors. Because the facial nerve runs directly through this gland, the surgery requires extreme precision to remove the tumor while preserving your ability to smile, blink, and move your face.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h3>Laryngectomy & Neck Surgery</h3>
+                <p>Advanced procedures for laryngeal (voice box) cancers. In some cases, a partial or total removal of the voice box is necessary. This is often combined with a "Neck Dissection" to remove lymph nodes that may contain cancer cells.</p>
+            </div>
+        </div>
+
+        <!-- Preserving Function & Voice Highlight -->
+        <div class="function-highlight">
+            <h3 style="color: var(--secondary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fa-solid fa-comment-medical"></i> Preserving Function & Voice</h3>
+            <p style="color: var(--gray); line-height: 1.7; margin-bottom: 15px; font-size: 1.05rem;">
+                Head and neck surgeries require extreme precision to remove the cancer while preserving vital functions like swallowing, breathing, and speech. Dr. Khadkaban's expertise in this area ensures the best possible functional outcomes.
+            </p>
+            <p style="color: var(--gray); line-height: 1.7; font-size: 1.05rem;">
+                For patients who require a total laryngectomy, we work closely with speech therapists to provide voice restoration options, including tracheoesophageal puncture (TEP) or electrolarynx devices. Our multidisciplinary team ensures you are fully supported in adapting to changes in speech and swallowing.
+            </p>
+        </div>
+
+        <!-- FAQs -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 50px;">Frequently Asked Questions</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Addressing your concerns about head and neck surgery</p>
+
+        <div class="faq-item">
+            <h4>Will I lose my voice after throat cancer surgery?</h4>
+            <p>Not always. Many laryngeal cancers can be treated with partial surgery or radiation therapy, preserving your voice. If a total laryngectomy (removal of the voice box) is necessary, we provide comprehensive voice rehabilitation options so you can learn to speak again using a prosthesis or an electronic device.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Will I need to take medication after a thyroidectomy?</h4>
+            <p>If your entire thyroid gland is removed (total thyroidectomy), you will need to take daily thyroid hormone replacement medication (like Levothyroxine) for the rest of your life. This medication is safe, inexpensive, and simply replaces the hormone your body is no longer producing.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Will I have a scar on my neck?</h4>
+            <p>Yes, a thyroidectomy or neck dissection typically leaves a scar. However, Dr. Khadkaban uses advanced surgical techniques, placing the incision in a natural skin fold on the neck to minimize visibility. The scar will fade significantly over time.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Expert Head & Neck Oncology</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">If you have noticed a lump in your neck, persistent hoarseness, or difficulty swallowing, don't delay. Schedule a consultation for a thorough evaluation.</p>
+            <a href="appointment.html" class="btn"><i class="fa-brands fa-whatsapp"></i> Book Your Appointment</a>
+        </div>
+
+    </main>
+
+     <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

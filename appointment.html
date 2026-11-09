@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Phoenix Cancer Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249 / 9324323241</div>
+            <div><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-img" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#7e9075" stroke-width="4"/>
+                    <circle cx="100" cy="100" r="75" fill="none" stroke="#7e9075" stroke-width="2"/>
+                    <path d="M70 130 Q80 100 75 70 Q85 80 85 100 Q85 120 70 130" fill="#7e9075"/>
+                    <circle cx="75" cy="65" r="10" fill="#7e9075"/>
+                    <path d="M130 130 Q120 100 125 70 Q115 80 115 100 Q115 120 130 130" fill="#d9bca3"/>
+                    <circle cx="125" cy="65" r="10" fill="#d9bca3"/>
+                    <path d="M90 140 Q110 110 100 75 Q105 80 105 100 Q105 120 90 140" fill="#c25e35"/>
+                    <circle cx="100" cy="65" r="12" fill="#c25e35"/>
+                </svg>
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="page-title">Book an Appointment</h2>
+        <p class="page-subtitle">Schedule your consultation with Dr. Dhiraj Khadkaban</p>
+        <div class="grid-2">
+            <div class="card">
+                <!-- Added ID to form and removed inline onsubmit -->
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="fullName" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="Enter your 10-digit mobile number">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label>Select Service / Concern *</label>
+                        <select id="service" required>
+                            <option value="">-- Select --</option>
+                            <option value="General Consultation">General Consultation</option>
+                            <option value="Breast Cancer">Breast Cancer</option>
+                            <option value="Oral/Mouth Cancer">Oral/Mouth Cancer</option>
+                            <option value="Lung Cancer">Lung Cancer</option>
+                            <option value="GI/Colorectal Cancer">GI/Colorectal Cancer</option>
+                            <option value="Head & Neck Cancer">Head & Neck Cancer</option>
+                            <option value="Second Opinion">Second Opinion</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date *</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Symptoms</label>
+                        <textarea id="message" rows="3" placeholder="Briefly describe your symptoms or attach report details"></textarea>
+                    </div>
+                    <!-- Updated Button Text -->
+                    <button type="submit" class="btn" style="width: 100%;"><i class="fa-brands fa-whatsapp"></i> Request Appointment via WhatsApp</button>
+                </form>
+            </div>
+            <div>
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Why Book With Us?</h3>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Direct consultation with the Surgical Oncologist.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> AI-assisted review of your previous reports.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Personalized treatment roadmap.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Compassionate and confidential care.</li>
+                </ul>
+                <div class="ai-banner" style="margin-top: 30px; padding: 20px;">
+                    <p style="font-size: 0.9rem;"><strong>Emergency?</strong><br>If you are experiencing severe symptoms, please call us directly at <br><strong>+91 9819563249</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col"><h4>Phoenix Cancer Clinic</h4><p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><a href="about.html">About Us</a><a href="doctor.html">Dr. Dhiraj Khadkaban</a><a href="ai-diagnosis.html">AI Technology</a><a href="treatments.html">Surgical Procedures</a></div>
+            <div class="footer-col"><h4>Contact Info</h4><p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p><p><i class="fa-solid fa-phone"></i> +91 9819563249</p><p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p></div>
+            <div class="footer-col"><h4>Timings</h4><p>Monday - Saturday</p><p>11:00 AM - 2:00 PM</p><p>5:00 PM - 7:00 PM</p><p style="color: #ff6b6b;">Sunday: Closed</p></div>
+        </div>
+        <div class="footer-bottom">&copy; 2023 Phoenix Cancer Clinic, Satara. All Rights Reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- WhatsApp Form Submission Script -->
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get values from the form inputs
+            const name = document.getElementById('fullName').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value || 'Not provided';
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value || 'None';
+
+            // The clinic's WhatsApp number (without the '+' sign or spaces)
+            const clinicNumber = '919819563249';
+
+            // Construct the WhatsApp message text
+            const text = `*New Appointment Request*\n\n` +
+                         `*Name:* ${name}\n` +
+                         `*Phone:* ${phone}\n` +
+                         `*Email:* ${email}\n` +
+                         `*Service:* ${service}\n` +
+                         `*Preferred Date:* ${date}\n` +
+                         `*Symptoms/Message:* ${message}`;
+
+            // URL-encode the message text
+            const encodedText = encodeURIComponent(text);
+
+            // Create the WhatsApp URL
+            const whatsappURL = `https://wa.me/${clinicNumber}?text=${encodedText}`;
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+
+            // Optional: Reset the form after submission
+            this.reset();
+        });
+    </script>
+</body>
+</html>

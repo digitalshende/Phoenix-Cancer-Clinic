@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Care | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Comprehensive breast cancer care at Phoenix Cancer Clinic, Satara. Expert surgical oncology by Dr. Dhiraj Khadkaban including breast conservation and oncoplastic surgery.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Breast Cancer page */
+        .procedure-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+            transition: var(--transition);
+            height: 100%;
+        }
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .procedure-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .procedure-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+        .procedure-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .symptom-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .symptom-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--gray);
+        }
+        .symptom-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+        }
+        .faq-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+ <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Breast Cancer Care</h2>
+        <p class="page-subtitle">Comprehensive Breast Oncology</p>
+
+        <!-- Intro Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--accent); background: linear-gradient(to right, #fdfbf9, #ffffff);">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray);">
+                A diagnosis of breast cancer can feel overwhelming. At Phoenix Cancer Clinic, we are here to guide you through every step with clarity, compassion, and world-class medical expertise. Our approach is not just about removing the disease; it is about preserving your health, your confidence, and your quality of life.
+            </p>
+        </div>
+
+        <!-- Understanding Breast Cancer -->
+        <div class="grid-2" style="margin-bottom: 50px; align-items: start;">
+            <div>
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fa-solid fa-ribbon"></i> Know the Signs</h3>
+                <p style="color: var(--gray); margin-bottom: 20px;">Early detection is the key to successful breast cancer treatment. We encourage you to perform regular self-examinations and consult a doctor if you notice any of the following:</p>
+                <ul class="symptom-list">
+                    <li><i class="fa-solid fa-circle-dot"></i> A new lump in the breast or underarm</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Thickening or swelling of part of the breast</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Irritation or dimpling of breast skin</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Redness or flaky skin in the nipple area</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Pulling in of the nipple or pain in the nipple area</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Any change in the size or the shape of the breast</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fa-solid fa-microscope"></i> AI-Assisted Screening</h3>
+                <p style="color: var(--gray); line-height: 1.8;">At Phoenix Cancer Clinic, we use advanced AI-assisted tools to analyze mammograms, ultrasounds, and pathology reports. This technology helps our team detect subtle abnormalities earlier and more accurately than traditional methods alone, ensuring that nothing is missed.</p>
+            </div>
+        </div>
+
+        <!-- Surgical Procedures (Grid) -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Our Surgical Procedures</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Advanced surgeries tailored to your specific diagnosis</p>
+
+        <div class="grid-3">
+            <div class="procedure-card">
+                <i class="fa-solid fa-scissors"></i>
+                <h3>Breast Conservation Surgery</h3>
+                <p>Also known as a lumpectomy, this procedure involves removing the tumor while preserving as much normal breast tissue as possible. It is often followed by radiation therapy and is the preferred choice for many early-stage breast cancers.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Oncoplastic Reconstruction</h3>
+                <p>A specialized technique that combines cancer removal with plastic surgery principles. This approach ensures the best possible cosmetic outcome, maintaining the natural shape and appearance of the breast after tumor removal.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Modified Radical Mastectomy</h3>
+                <p>In cases where the cancer is extensive, a mastectomy may be necessary. This involves the complete removal of the breast tissue and the surrounding lymph nodes, ensuring the highest level of oncological safety.</p>
+            </div>
+        </div>
+
+        <!-- Our Approach Section -->
+        <div class="grid-2" style="margin-top: 60px; align-items: center;">
+            <div>
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor Consulting Patient" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow);">
+            </div>
+            <div>
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.8rem;">Our Approach</h3>
+                <p style="font-size: 1.05rem; color: var(--gray); margin-bottom: 15px; line-height: 1.8;">
+                    We understand that breast cancer treatment involves both physical and emotional healing. Dr. Khadkaban specializes in advanced breast surgeries that prioritize oncological safety while maintaining aesthetic integrity.
+                </p>
+                <p style="font-size: 1.05rem; color: var(--gray); margin-bottom: 20px; line-height: 1.8;">
+                    Our clinic provides a multidisciplinary approach, coordinating with medical oncologists and radiation oncologists to provide a complete treatment plan tailored to the patient's specific cancer type and stage.
+                </p>
+                <a href="appointment.html" class="btn"><i class="fa-solid fa-calendar-check"></i> Consult Dr. Khadkaban</a>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 60px;">Frequently Asked Questions</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Addressing your concerns</p>
+
+        <div class="faq-item">
+            <h4>Will I lose my breast?</h4>
+            <p>Not necessarily. Thanks to advances in Breast Conservation Surgery and Oncoplastic techniques, many women can keep their natural breast. Dr. Khadkaban will discuss the best surgical option based on the size and location of your tumor.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How long is the recovery after breast surgery?</h4>
+            <p>Recovery varies depending on the type of surgery. A lumpectomy often requires 1-2 weeks of recovery, while a mastectomy may take 3-4 weeks. Our team provides comprehensive post-operative care to ensure you heal comfortably.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Will I need chemotherapy or radiation?</h4>
+            <p>The need for chemotherapy or radiation depends on the stage of the cancer and the pathology report. Our multidisciplinary team will coordinate with specialists to ensure you receive the exact adjuvant therapies you need, and no more.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Take Control of Your Breast Health</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Whether you need a routine screening, a second opinion, or a surgical consultation, our team is here to support you with the highest standard of care.</p>
+            <a href="appointment.html" class="btn"><i class="fa-brands fa-whatsapp"></i> Book Your Appointment</a>
+        </div>
+
+    </main>
+
+     <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

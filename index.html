@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Cancer Clinic | Satara | Advanced AI-Assisted Oncology</title>
+    <meta name="description" content="Phoenix Cancer Clinic in Satara offers advanced AI-assisted cancer diagnosis and expert surgical oncology by Dr. Dhiraj Khadkaban. Compassionate and modern cancer care.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Extra inline styles for the new homepage sections -->
+    <style>
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+        .stat-item h3 { font-size: 2rem; color: var(--primary); margin-bottom: 5px; }
+        .stat-item p { color: var(--gray); font-weight: 500; font-size: 0.9rem; }
+        
+        .section-title { text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 10px; margin-top: 50px;}
+        .section-subtitle { text-align: center; color: var(--secondary); margin-bottom: 40px; font-weight: 500; }
+        
+        .process-step { text-align: center; position: relative; padding: 20px; }
+        .process-step .step-num {
+            width: 50px; height: 50px; background: var(--secondary); color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; font-weight: bold; margin: 0 auto 15px auto;
+        }
+        
+        .testimonial-card { background: var(--white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow); font-style: italic; position: relative; }
+        .testimonial-card::before {
+            content: '\201C'; font-size: 4rem; color: var(--accent); position: absolute; top: 10px; left: 20px; opacity: 0.5; font-family: serif;
+        }
+        .testimonial-card p { position: relative; z-index: 1; margin-bottom: 15px; color: var(--gray); }
+        .testimonial-author { font-weight: 600; color: var(--primary); font-style: normal; display: flex; align-items: center; gap: 10px;}
+        
+        .cta-banner { background: linear-gradient(135deg, var(--primary), #a14b27); color: white; padding: 50px; border-radius: 15px; text-align: center; margin-top: 50px; }
+        .cta-banner h2 { margin-bottom: 15px; font-size: 2rem; }
+        .cta-banner p { margin-bottom: 25px; font-size: 1.1rem; opacity: 0.9; }
+        .cta-banner .btn { background: white; color: var(--primary); font-size: 1.1rem; padding: 15px 35px; }
+        .cta-banner .btn:hover { background: var(--light); color: #a14b27; }
+    .style1 {color: #FFFFFF}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onClick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Advanced AI-Assisted Cancer Diagnosis & Treatment</h2>
+                <p>Welcome to Phoenix Cancer Clinic, Satara. We are dedicated to providing comprehensive, modern, and compassionate oncology care. Under the expert guidance of Dr. Dhiraj Khadkaban, we combine surgical expertise with cutting-edge AI technology for accurate diagnosis and effective treatment planning.</p>
+                <a href="appointment.html" class="btn">Book an Appointment</a>
+                <a href="about.html" class="btn btn-secondary" style="margin-left: 10px;">Learn More</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor Consultation" class="hero-img">
+        </div>
+        
+        <!-- TRUST / STATS BAR -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Patients Treated</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>AI-Assisted Precision</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Compassionate Support</p>
+            </div>
+        </div>
+
+        <!-- CORE FEATURES SECTION -->
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>AI-Assisted Diagnosis</h3>
+                <p>Utilizing artificial intelligence for accurate cancer diagnosis, pathology report analysis, and personalized treatment planning.</p>
+                <br><a href="ai-diagnosis.html" style="color:var(--primary); text-decoration:none; font-weight:600;">Read More &rarr;</a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-scalpel"></i>
+                <h3>Advanced Surgeries</h3>
+                <p>Specializing in laparoscopic, laser, and complex reconstructive surgeries for various types of cancers.</p>
+                <br><a href="treatments.html" style="color:var(--primary); text-decoration:none; font-weight:600;">View Treatments &rarr;</a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user-doctor"></i>
+                <h3>Expert Oncologist</h3>
+                <p>Dr. Dhiraj S. Khadkaban (MBBS, MS), a highly experienced Consultant Surgical Oncologist.</p>
+                <br><a href="doctor.html" style="color:var(--primary); text-decoration:none; font-weight:600;">Meet the Doctor &rarr;</a>
+            </div>
+        </div>
+
+        <!-- CANCERS WE TREAT (QUICK LINKS) -->
+        <h2 class="section-title">Cancers We Treat</h2>
+        <p class="section-subtitle">Comprehensive care for various types of oncology conditions</p>
+        <div class="grid-3">
+            <a href="breast-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-ribbon" style="color: var(--accent); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Breast Cancer</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Conservation & Reconstruction</p>
+                </div>
+            </a>
+            <a href="mouth-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-tooth" style="color: var(--primary); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Oral & Mouth</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Laser & Commando Surgery</p>
+                </div>
+            </a>
+            <a href="lung-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-lungs" style="color: var(--secondary); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Lung & Chest</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Thoracic Oncology</p>
+                </div>
+            </a>
+            <a href="gi-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-stomach" style="color: var(--primary); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Gastrointestinal</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Stomach, Liver & Pancreas</p>
+                </div>
+            </a>
+            <a href="colorectal-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-scissors" style="color: var(--secondary); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Colorectal</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Laparoscopic Resections</p>
+                </div>
+            </a>
+            <a href="head-neck-cancer.html" class="card" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <i class="fa-solid fa-head-side-cough" style="color: var(--accent); margin: 0; font-size: 2rem;"></i>
+                <div>
+                    <h3 style="margin: 0; font-size: 1.1rem;">Head & Neck</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--gray);">Thyroid & Throat</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- WHY CHOOSE US -->
+        <h2 class="section-title">Why Choose Phoenix Cancer Clinic?</h2>
+        <p class="section-subtitle">Where cutting-edge technology meets human compassion</p>
+        <div class="grid-2" style="align-items: center;">
+            <div>
+                 <img src="img/Phoenix Cancer Clinic Satara.png">
+            </div>
+            <div>
+                <ul class="service-list" style="font-size: 1.05rem;">
+                    <li><i class="fa-solid fa-circle-check" style="font-size: 1.5rem;"></i> <strong>AI + Human Expertise:</strong> We don't just rely on machines. AI gives us data-driven insights, but Dr. Khadkaban's surgical experience makes the final, personalized decision.</li>
+                    <li><i class="fa-solid fa-circle-check" style="font-size: 1.5rem;"></i> <strong>Minimally Invasive Techniques:</strong> Faster recovery, less pain, and minimal scarring using advanced laparoscopic and laser surgeries.</li>
+                    <li><i class="fa-solid fa-circle-check" style="font-size: 1.5rem;"></i> <strong>Comprehensive Care:</strong> From the first consultation to post-surgery rehabilitation, we are with you at every step.</li>
+                    <li><i class="fa-solid fa-circle-check" style="font-size: 1.5rem;"></i> <strong>Ethical & Transparent:</strong> We provide clear treatment plans, cost estimates, and honest expectations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- YOUR JOURNEY WITH US -->
+        <h2 class="section-title">Your Journey With Us</h2>
+        <p class="section-subtitle">A clear, step-by-step approach to your treatment</p>
+        <div class="grid-4">
+            <div class="process-step">
+                <div class="step-num">1</div>
+                <h4>Consultation</h4>
+                <p style="font-size: 0.9rem; color: var(--gray);">In-depth discussion about your symptoms, medical history, and initial examination.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">2</div>
+                <h4>AI-Assisted Diagnosis</h4>
+                <p style="font-size: 0.9rem; color: var(--gray);">Your reports and scans are analyzed using advanced AI to ensure accurate staging.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">3</div>
+                <h4>Treatment Planning</h4>
+                <p style="font-size: 0.9rem; color: var(--gray);">Dr. Khadkaban creates a personalized surgical or medical roadmap for you.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">4</div>
+                <h4>Recovery & Care</h4>
+                <p style="font-size: 0.9rem; color: var(--gray);">Comprehensive post-operative care, follow-ups, and rehabilitation support.</p>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <h2 class="section-title">What Our Patients Say</h2>
+        <p class="section-subtitle">Stories of hope and healing</p>
+        <div class="grid-3">
+            <div class="testimonial-card">
+                <p>Dr. Khadkaban explained every detail of my breast cancer surgery. The AI reports gave me immense confidence. I am now recovering well and forever grateful.</p>
+                <div class="testimonial-author">
+                    <i class="fa-solid fa-user-circle" style="font-size: 1.5rem; font-style: normal;"></i> 
+                    <div>
+                        <span>Mrs. S. Patil</span><br>
+                        <span style="font-size: 0.8rem; color: var(--secondary); font-weight: normal;">Breast Cancer Survivor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>The clinic is very clean and the staff is highly supportive. The laparoscopic surgery for my colon cancer meant I was back on my feet in just a few days. Highly recommended.</p>
+                <div class="testimonial-author">
+                    <i class="fa-solid fa-user-circle" style="font-size: 1.5rem; font-style: normal;"></i> 
+                    <div>
+                        <span>Mr. R. Deshmukh</span><br>
+                        <span style="font-size: 0.8rem; color: var(--secondary); font-weight: normal;">Colorectal Cancer Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>We came to Satara from a nearby village. The doctor was very kind and did not recommend unnecessary tests. The AI technology used here is truly world-class.</p>
+                <div class="testimonial-author">
+                    <i class="fa-solid fa-user-circle" style="font-size: 1.5rem; font-style: normal;"></i> 
+                    <div>
+                        <span>Mr. A. Jadhav</span><br>
+                        <span style="font-size: 0.8rem; color: var(--secondary); font-weight: normal;">Patient's Family Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM CALL TO ACTION -->
+        <div class="cta-banner">
+            <h2>Take the First Step Towards Healing</h2>
+            <p>Don't let fear delay your diagnosis. Our expert team is ready to help you with world-class cancer care right here in Satara.</p>
+            <a href="appointment.html" class="btn"><i class="fa-brands fa-whatsapp"></i> Book Your Appointment Now</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Timings</h4>
+                <p>Monday - Saturday</p>
+                <p>11:00 AM - 2:00 PM</p>
+                <p>5:00 PM - 7:00 PM</p>
+                <p style="color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+		
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

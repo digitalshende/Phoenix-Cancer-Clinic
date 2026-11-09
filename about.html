@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Learn about Phoenix Cancer Clinic in Satara. We combine advanced AI-assisted diagnosis with expert surgical oncology for compassionate, world-class cancer care.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Additional styles specific to the About page */
+        .vision-mission-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary);
+            height: 100%;
+        }
+        .vision-mission-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .value-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .value-title {
+            color: var(--dark);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .value-text {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        .cta-about {
+            background: var(--light);
+            border: 2px dashed var(--secondary);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cta-about h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;}
+        .cta-about p { margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;}
+    .style1 {color: #FFFFFF}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Page Header -->
+        <h2 class="page-title">About Phoenix Cancer Clinic</h2>
+        <p class="page-subtitle">Humanity-focused Cancer Care</p>
+
+        <!-- Introduction Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--primary);">
+            <p style="font-size: 1.1rem; margin-bottom: 15px; line-height: 1.8;">Phoenix Cancer Clinic, located in the heart of Satara, is a state-of-the-art facility dedicated to the fight against cancer. We understand the physical and emotional toll of a cancer diagnosis, and we strive to provide a supportive environment for our patients and their families.</p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">Our clinic is uniquely positioned to offer the latest advancements in oncology. We integrate <strong>Advanced AI-Assisted Diagnosis</strong> with traditional and modern surgical techniques to ensure the highest standard of care. We believe that every patient is unique, and therefore, every treatment plan should be as well.</p>
+        </div>
+
+        <!-- Vision & Mission Grid -->
+        <div class="grid-2" style="margin-bottom: 50px;">
+            <div class="vision-mission-card">
+                <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                <p style="color: var(--gray); line-height: 1.7;">To be the premier destination for comprehensive cancer care in Satara and surrounding regions, offering world-class treatment with a human touch. We envision a future where no patient has to travel far from home to receive cutting-edge, compassionate oncology care.</p>
+            </div>
+            <div class="vision-mission-card">
+                <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                <ul class="service-list" style="margin-top: 10px;">
+                    <li><i class="fa-solid fa-check-circle"></i> Provide accurate diagnosis using AI and expert medical evaluation.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Offer personalized, evidence-based treatment plans.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Ensure compassionate care and support throughout the patient's journey.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Make advanced cancer care accessible and affordable.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Core Values Section -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 20px;">Our Core Values</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">The principles that guide every decision we make</p>
+        
+        <div class="grid-4" style="margin-bottom: 50px;">
+            <div class="card" style="text-align: center; border-top: none; border-bottom: 3px solid var(--secondary);">
+                <i class="fa-solid fa-heart-pulse value-icon" style="color: #d9534f;"></i>
+                <div class="value-title">Compassion</div>
+                <div class="value-text">We treat every patient with empathy, dignity, and respect, understanding the emotional challenges of a cancer diagnosis.</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: none; border-bottom: 3px solid var(--secondary);">
+                <i class="fa-solid fa-microchip value-icon"></i>
+                <div class="value-title">Innovation</div>
+                <div class="value-text">We continuously integrate the latest medical advancements, including AI technology, to improve diagnostic accuracy and treatment outcomes.</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: none; border-bottom: 3px solid var(--secondary);">
+                <i class="fa-solid fa-crosshairs value-icon"></i>
+                <div class="value-title">Precision</div>
+                <div class="value-text">Our approach is deeply analytical. We leave no stone unturned to ensure the most accurate diagnosis and targeted surgical interventions.</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: none; border-bottom: 3px solid var(--secondary);">
+                <i class="fa-solid fa-handshake-angle value-icon"></i>
+                <div class="value-title">Integrity</div>
+                <div class="value-text">We are transparent with our patients about their condition, treatment options, expected outcomes, and costs. Honesty is our policy.</div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us (Expanded) -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 20px;">Why Choose Us?</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Setting new standards in cancer care in Satara</p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-brain"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Advanced AI-Driven Tools</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">Our AI systems cross-reference your reports with global oncology databases, giving Dr. Khadkaban unparalleled insights for your treatment plan.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user-doctor"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Experienced Surgical Oncologist</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">Dr. Dhiraj Khadkaban brings years of specialized experience in complex, high-risk cancer surgeries with a proven track record of success.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-scalpel"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Modern Surgical Techniques</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">We utilize minimally invasive laparoscopic and laser surgeries, ensuring smaller incisions, less post-operative pain, and faster recovery times.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Comprehensive Rehabilitation</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">Cancer care doesn't end with surgery. We offer nutritional counseling, physiotherapy, and psychological support for holistic healing.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Centralized Location</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">Situated in Sadar Bazar, Satara, our clinic is easily accessible for patients traveling from the city and nearby districts.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-virus"></i>
+                <h4 style="margin-bottom: 10px; color: var(--primary);">Sterile & Safe Environment</h4>
+                <p style="font-size: 0.95rem; color: var(--gray);">We maintain the highest standards of hygiene and infection control, prioritizing the safety of our patients, especially those with compromised immunity.</p>
+            </div>
+        </div>
+
+        <!-- Community Commitment -->
+        <div class="card" style="margin-top: 40px; background: var(--light); border: 1px solid #ddd; text-align: center; padding: 40px;">
+            <h3 style="color: var(--secondary); margin-bottom: 15px;"><i class="fa-solid fa-building-columns"></i> Committed to Satara</h3>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--gray); line-height: 1.7;">For years, patients in Satara had to travel to metro cities like Pune or Mumbai for advanced cancer treatment. Phoenix Cancer Clinic was founded to change this. We are proud to bring world-class, AI-assisted oncology and expert surgical care right to our local community, ensuring you receive the best treatment close to your family and support system.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about">
+            <h3>Experience the Phoenix Difference</h3>
+            <p>Whether you are seeking a second opinion, an early screening, or a complex surgical consultation, our team is ready to provide you with the highest standard of care.</p>
+            <a href="appointment.html" class="btn"><i class="fa-solid fa-calendar-check"></i> Schedule a Consultation</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

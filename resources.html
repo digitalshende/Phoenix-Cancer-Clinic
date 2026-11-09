@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Resources | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Patient resources at Phoenix Cancer Clinic, Satara. Find answers to FAQs, pre-surgery checklists, and post-surgery care guidelines to support your cancer journey.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Patient Resources page */
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+            transition: var(--transition);
+        }
+        .faq-item:hover {
+            border-left-color: var(--primary);
+        }
+        .faq-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-item h4 i {
+            color: var(--primary);
+        }
+        .faq-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            padding-left: 28px;
+        }
+
+        .checklist-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+            height: 100%;
+        }
+        .checklist-card h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+        .checklist-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .checklist-list li i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .care-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+            transition: var(--transition);
+        }
+        .care-card:hover {
+            transform: translateY(-5px);
+        }
+        .care-card i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .care-card h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        .care-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .emergency-box {
+            background: #fff5f5;
+            border: 2px solid #d9534f;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .emergency-box h3 {
+            color: #d9534f;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .emergency-box ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .emergency-box ul li {
+            color: #333;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 10px;
+        }
+        .emergency-box ul li i {
+            color: #d9534f;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Patient Resources</h2>
+        <p class="page-subtitle">Supporting You Through Your Journey</p>
+
+        <!-- Intro Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--secondary); background: linear-gradient(to right, #f4f7f2, #ffffff); text-align: center;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray); max-width: 900px; margin: 0 auto;">
+                A cancer diagnosis brings many questions. At Phoenix Cancer Clinic, we believe that informed patients make empowered decisions. We have compiled essential resources, checklists, and answers to frequently asked questions to help you and your family navigate this journey with confidence.
+            </p>
+        </div>
+
+        <!-- FAQs Section -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 20px;">Frequently Asked Questions</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Clear answers to common concerns</p>
+
+        <div class="grid-2" style="align-items: start;">
+            <div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-microchip"></i> How does AI help in my treatment?</h4>
+                    <p>AI analyzes your medical reports, scans, and global research databases to give Dr. Khadkaban data-driven insights. This ensures the most accurate diagnosis, precise staging of the cancer, and a highly personalized treatment plan tailored to your specific condition.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-folder-open"></i> What should I bring to my first appointment?</h4>
+                    <p>Please bring all previous medical records, biopsy reports, radiology scans (CDs/films), a list of current medications (including supplements), and any relevant family medical history. Having these ready helps us create a complete picture of your health.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-scalpel"></i> Is laparoscopic cancer surgery safe?</h4>
+                    <p>Yes. When performed by an experienced surgeon like Dr. Khadkaban, it is highly safe and often results in better outcomes, less pain, and faster recovery than traditional open surgery. It is a highly effective method for removing many types of tumors.</p>
+                </div>
+            </div>
+            <div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-clock"></i> How long will I be in the hospital?</h4>
+                    <p>The length of your stay depends on the type of surgery. Minimally invasive (laparoscopic) surgeries often require a 2-4 day stay, while complex open surgeries may require 5-7 days. Dr. Khadkaban will give you a specific estimate before your procedure.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-pills"></i> Will I need chemotherapy or radiation after surgery?</h4>
+                    <p>This depends entirely on the pathology report of the tumor removed during surgery. If there is a risk of microscopic spread, we may recommend adjuvant therapy. We will discuss this in detail during your post-operative follow-up.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fa-solid fa-user-doctor"></i> Can I get a second opinion here?</h4>
+                    <p>Absolutely. We encourage patients to seek clarity. Dr. Khadkaban frequently provides second opinions for patients who want to confirm their diagnosis or explore different surgical approaches before committing to a treatment plan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pre-Surgery Preparation -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 60px;">Pre-Surgery Preparation</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">How to prepare for a safe and successful surgery</p>
+
+        <div class="grid-2">
+            <!-- Medical Preparation -->
+            <div class="checklist-card">
+                <h3><i class="fa-solid fa-stethoscope"></i> Medical & Physical Prep</h3>
+                <ul class="checklist-list">
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Complete all tests:</strong> Finish all required blood tests, ECG, and pre-anesthetic checkups as instructed.</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Fasting:</strong> Follow fasting instructions strictly before surgery (usually no food or drink after midnight).</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Medications:</strong> Inform your doctor about all medications. You may need to stop blood thinners a week before surgery.</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Quit Smoking:</strong> If you smoke or chew tobacco, stopping at least 2 weeks before surgery significantly improves healing.</li>
+                </ul>
+            </div>
+
+            <!-- Logistical Preparation -->
+            <div class="checklist-card" style="border-top-color: var(--secondary);">
+                <h3 style="color: var(--secondary);"><i class="fa-solid fa-suitcase-medical"></i> Logistical & Day-Of Prep</h3>
+                <ul class="checklist-list">
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Arrange transport:</strong> Arrange for a family member or friend to drive you to and from the hospital.</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Pack comfortable clothing:</strong> Bring loose-fitting, front-buttoning clothes (easier to put on after surgery) and comfortable footwear.</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Bring essentials:</strong> Pack your ID, insurance documents, phone charger, and toiletries.</li>
+                    <li><i class="fa-regular fa-square-check"></i> <strong>Leave valuables at home:</strong> Leave jewelry, large amounts of cash, and other valuables at home.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Post-Surgery Care -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 60px;">Post-Surgery Care & Recovery</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Guidelines to help you heal safely at home</p>
+
+        <div class="grid-4">
+            <div class="care-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h4>Diet & Nutrition</h4>
+                <p>Start with light, easily digestible foods. Stay hydrated. Follow any specific dietary guidelines given by Dr. Khadkaban or our nutritionist. Avoid heavy, spicy, or gas-producing foods initially.</p>
+            </div>
+            <div class="care-card">
+                <i class="fa-solid fa-band-aid"></i>
+                <h4>Wound Care</h4>
+                <p>Keep the surgical site clean and dry. Follow instructions on when you can shower. Watch for signs of infection like increased redness, swelling, or discharge. Do not apply any home remedies to the wound.</p>
+            </div>
+            <div class="care-card">
+                <i class="fa-solid fa-person-walking"></i>
+                <h4>Activity & Rest</h4>
+                <p>Gentle walking is encouraged to prevent blood clots. However, avoid lifting heavy objects, strenuous exercise, or driving until cleared by the doctor. Prioritize sleep and rest.</p>
+            </div>
+            <div class="care-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h4>Follow-Up Visits</h4>
+                <p>Attend all scheduled follow-up appointments. These are crucial for checking your healing, removing stitches (if necessary), and reviewing the final pathology report.</p>
+            </div>
+        </div>
+
+        <!-- Emergency Contact Box -->
+        <div class="emergency-box">
+            <h3><i class="fa-solid fa-triangle-exclamation"></i> When to Call the Doctor Immediately</h3>
+            <p style="color: #333; margin-bottom: 15px;">While recovery is usually smooth, contact the clinic immediately if you experience:</p>
+            <ul>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Fever above 101°F (38.3°C) or chills.</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Excessive bleeding or soaking through bandages.</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Severe, uncontrolled pain.</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Shortness of breath or chest pain.</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Persistent nausea or vomiting.</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Redness, warmth, or pus at the surgical site.</li>
+            </ul>
+            <p style="margin-top: 20px; font-weight: 600; color: #d9534f;"><i class="fa-solid fa-phone"></i> Emergency Contact: +91 9819563249</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Have More Questions?</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Our team is always available to support you. If you have questions about your upcoming surgery, recovery, or treatment plan, please reach out to us.</p>
+            <a href="contact.html" class="btn"><i class="fa-solid fa-envelope"></i> Contact Our Team</a>
+        </div>
+
+    </main>
+
+     <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

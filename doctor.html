@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dhiraj S. Khadkaban | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Meet Dr. Dhiraj S. Khadkaban, MBBS, MS, Fellowship in Surgical Oncology. Founder and Consultant Surgical Oncologist at Phoenix Cancer Clinic, Satara.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Doctor page */
+        .profile-card {
+            text-align: center; 
+            border-top: none; 
+            border-bottom: 5px solid var(--primary);
+            padding: 40px 30px;
+        }
+        .profile-card img {
+            width: 220px; 
+            height: 220px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 5px solid var(--secondary); 
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .profile-card h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        .profile-card .credentials {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .profile-card .title-role {
+            font-size: 0.95rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+        .bio-section h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            margin-top: 30px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bio-section h3:first-child { margin-top: 0; }
+        .bio-section p {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .founder-highlight {
+            background: linear-gradient(to right, #fff8f5, #ffffff);
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin: 25px 0;
+        }
+        .founder-highlight h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .timing-box {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+        }
+        .timing-box h4 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .timing-box p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+    .style1 {color: #FFFFFF}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onClick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Meet Our Doctor</h2>
+        <p class="page-subtitle">Expertise, Compassion, and Commitment to Excellence</p>
+
+        <div class="grid-2" style="align-items: start;">
+            
+            <!-- Left Column: Profile Card & Timings -->
+            <div>
+                <div class="card profile-card">
+                    <!-- Using a high-quality professional placeholder image -->
+                    <img src="img/Dr. Dhiraj S.  Khadakban.png" alt="Dr. Dhiraj S. Khadkaban">
+                    <h2>Dr. Dhiraj S. Khadkaban</h2>
+                    <div class="credentials">MBBS, MS</div>
+					                    <div class="credentials">NMC/MMC Reg. No. 2004/09/3396</div>
+                    <div class="credentials" style="font-size: 1rem; margin-bottom: 15px;">Fellowship in Surgical Oncology</div>
+                    <div class="title-role">
+                        <strong>Consultant Surgical Oncologist</strong><br>
+                        Founder & Owner, Phoenix Cancer Clinic Satara<br>
+                        Laparoscopic Cancer Surgeon
+                    </div>
+                </div>
+
+                <div class="timing-box">
+                    <h4><i class="fa-regular fa-clock"></i> Consultation Timings</h4>
+                    <p>Monday - Saturday</p>
+                    <p>11:00 AM - 2:00 PM</p>
+                    <p>5:00 PM - 7:00 PM</p>
+                    <p style="color: #d9534f; margin-top: 10px; font-size: 0.9rem;">Sunday: Closed</p>
+                    <a href="appointment.html" class="btn" style="margin-top: 15px; width: 100%;">Book Appointment</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Detailed Bio -->
+            <div class="bio-section">
+                <p style="font-size: 1.1rem; color: var(--dark); font-weight: 500; margin-bottom: 20px;">
+                    Dr. Dhiraj S. Khadkaban is a distinguished name in the field of oncology, renowned for his expertise, compassion, and commitment to excellence.
+                </p>
+
+                <h3><i class="fa-solid fa-graduation-cap"></i> Education and Training</h3>
+                <p>
+                    Dr. Khadkaban completed his Bachelor of Medicine and Bachelor of Surgery (MBBS) from a prestigious institution, followed by a Master of Surgery (MS) specializing in surgical oncology. He further honed his skills and expertise through a Fellowship in Surgical Oncology, gaining advanced training in the diagnosis, treatment, and management of various complex cancers.
+                </p>
+
+                <h3><i class="fa-solid fa-briefcase-medical"></i> Professional Experience</h3>
+                <p>
+                    With years of experience in the field of oncology, Dr. Khadkaban has established himself as a trusted leader and expert in surgical oncology. His dedication to advancing the field of cancer care is evident in his commitment to staying abreast of the latest advancements in oncology research and treatment modalities. 
+                </p>
+                <p>
+                    As a Consultant Surgical Oncologist, he specializes in the surgical management of cancer, employing the latest techniques and technologies to provide optimal outcomes for his patients. He works closely with a multidisciplinary team of oncologists, radiation therapists, nurses, and support staff to deliver comprehensive, personalized care tailored to each patient's unique needs.
+                </p>
+
+                <div class="founder-highlight">
+                    <h4><i class="fa-solid fa-hospital-user" style="color: var(--primary);"></i> Founder of Phoenix Cancer Clinic</h4>
+                    <p style="margin-bottom: 0;">
+                        Driven by a vision to provide world-class cancer care closer to home, Dr. Khadkaban founded Phoenix Cancer Clinic Satara. Under his leadership, the clinic has become a beacon of hope and healing for cancer patients in the Satara region, offering state-of-the-art facilities, advanced treatment options (including AI-assisted diagnosis), and compassionate support services.
+                    </p>
+                </div>
+
+                <h3><i class="fa-solid fa-stethoscope"></i> Specializations</h3>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Laparoscopic Cancer Surgery (Colon, Stomach)</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Laser Surgery for Oral Cancer</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Complex Head & Neck Surgeries</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Breast Conservation & Oncoplastic Surgery</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Gastrointestinal & Hepatobiliary Surgeries</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-heart-pulse"></i> Compassionate Care</h3>
+                <p>
+                    At Phoenix Cancer Clinic Satara, Dr. Khadkaban and his team are committed to providing compassionate, patient-centered care that focuses not only on treating the disease but also on addressing the holistic needs of each individual. With empathy, understanding, and respect, they strive to empower patients and their families to navigate their cancer journey with dignity, courage, and hope.
+                </p>
+
+                <div class="ai-banner" style="margin-top: 30px; text-align: left; padding: 25px;">
+                    <h4 style="margin-bottom: 10px;"><i class="fa-solid fa-calendar-check"></i> Contact Dr. Khadkaban</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">
+                        If you or a loved one is facing a cancer diagnosis, Dr. Dhiraj S. Khadkaban and the team at Phoenix Cancer Clinic Satara are here to help. Together, we can face cancer with strength, resilience, and optimism.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung & Chest Cancer | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Expert thoracic oncology care at Phoenix Cancer Clinic, Satara. Advanced surgical treatments for lung and chest cancers including Lobectomy and Pneumonectomy by Dr. Dhiraj Khadkaban.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Lung Cancer page */
+        .procedure-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--secondary);
+            transition: var(--transition);
+            height: 100%;
+        }
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .procedure-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .procedure-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+        .procedure-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .symptom-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .symptom-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--gray);
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .symptom-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+        .faq-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .precision-highlight {
+            background: linear-gradient(to right, #f4f7f2, #ffffff);
+            border-left: 5px solid var(--secondary);
+            padding: 30px;
+            border-radius: 0 10px 10px 0;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Lung & Chest Cancer</h2>
+        <p class="page-subtitle">Thoracic Oncology Care</p>
+
+        <!-- Intro Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--secondary); background: linear-gradient(to right, #f4f7f2, #ffffff);">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray); margin-bottom: 15px;">
+                Lung and chest cancers (Thoracic Oncology) require highly specialized surgical skills. At Phoenix Cancer Clinic, Dr. Khadkaban is experienced in performing complex thoracic procedures with a primary focus on minimizing recovery time, preserving lung function, and ensuring complete tumor removal.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray);">
+                We utilize advanced imaging and AI-assisted planning to precisely map the tumor before surgery, ensuring maximum safety and efficacy during the operation.
+            </p>
+        </div>
+
+        <!-- Symptoms & Risk Factors -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Signs, Symptoms & Risk Factors</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Early detection significantly improves outcomes</p>
+
+        <div class="grid-2" style="margin-bottom: 50px;">
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-triangle-exclamation"></i> When to see a doctor:</h4>
+                <ul class="symptom-list">
+                    <li><i class="fa-solid fa-circle-dot"></i> A cough that doesn't go away or gets worse over time.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Coughing up blood or rust-colored sputum.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Chest pain that is often worse when you breathe deeply or cough.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Shortness of breath or wheezing.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Unexplained weight loss and loss of appetite.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Hoarseness or recurring respiratory infections (like bronchitis).</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-ban"></i> Major Risk Factors:</h4>
+                <ul class="symptom-list">
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Smoking:</strong> The leading cause. This includes cigarettes, cigars, and pipes.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Secondhand Smoke:</strong> Exposure to smoke from others.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Environmental Toxins:</strong> Exposure to asbestos, radon gas, or air pollution.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Family History:</strong> A genetic predisposition to lung cancer.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Surgical Procedures (Grid) -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Our Advanced Surgeries</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Complex thoracic procedures performed with precision</p>
+
+        <div class="grid-3">
+            <div class="procedure-card">
+                <i class="fa-solid fa-lungs"></i>
+                <h3>Lobectomy</h3>
+                <p>The most common surgery for early-stage lung cancer. It involves the removal of the lobe of the lung containing the tumor. The remaining lobes in that lung will expand to fill the space, allowing you to continue breathing normally.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-lungs-virus"></i>
+                <h3>Pneumonectomy</h3>
+                <p>Reserved for cases of advanced localized cancer where the tumor is too large or centrally located. This procedure involves the removal of an entire lung. Patients can still lead active lives with one healthy lung, supported by our comprehensive rehabilitation team.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-gullet"></i>
+                <h3>Oesophagectomy</h3>
+                <p>Surgical removal of part or all of the esophagus. This is a highly complex procedure often performed for esophageal cancer (cancer of the food pipe). It requires expert surgical skill to reconstruct the digestive tract and restore the ability to swallow.</p>
+            </div>
+        </div>
+
+        <!-- Precision Care Highlight -->
+        <div class="precision-highlight">
+            <h3 style="color: var(--secondary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fa-solid fa-crosshairs"></i> Precision Care & AI Integration</h3>
+            <p style="color: var(--gray); line-height: 1.7; margin-bottom: 15px; font-size: 1.05rem;">
+                Thoracic surgery leaves little room for error. That is why we do not rely on standard imaging alone. We utilize advanced AI-assisted planning to create a precise 3D map of your lungs and the tumor before surgery.
+            </p>
+            <div class="grid-3" style="margin-top: 20px;">
+                <div style="text-align: center;"><i class="fa-solid fa-cube" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;"></i><br><strong>3D Tumor Mapping</strong><p style="font-size: 0.9rem; color: var(--gray);">AI creates detailed models to plan the exact surgical approach.</p></div>
+                <div style="text-align: center;"><i class="fa-solid fa-heart-pulse" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;"></i><br><strong>Lung Preservation</strong><p style="font-size: 0.9rem; color: var(--gray);">We aim to remove only what is necessary, saving healthy lung tissue.</p></div>
+                <div style="text-align: center;"><i class="fa-solid fa-clock-rotate-left" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;"></i><br><strong>Faster Recovery</strong><p style="font-size: 0.9rem; color: var(--gray);">Precise planning leads to shorter surgery times and quicker healing.</p></div>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 50px;">Frequently Asked Questions</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Answers to common concerns</p>
+
+        <div class="faq-item">
+            <h4>Will I be able to breathe normally after lung surgery?</h4>
+            <p>Yes. After a Lobectomy, the remaining lobes expand to compensate, and most patients regain normal breathing. After a Pneumonectomy, you can live a normal, active life with one lung, though you may experience shortness of breath during heavy exertion. We provide pulmonary rehabilitation to help you adapt.</p>
+        </div>
+        <div class="faq-item">
+            <h4>What is the recovery time for thoracic surgery?</h4>
+            <p>Hospital stays typically range from 3 to 7 days depending on the procedure. Full recovery at home can take 4 to 8 weeks. We will provide a detailed post-operative care plan, including breathing exercises and pain management, to ensure a smooth recovery.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is minimally invasive (VATS) surgery an option?</h4>
+            <p>In many cases, yes. Video-Assisted Thoracoscopic Surgery (VATS) uses small incisions and a camera, resulting in less pain and faster recovery. Dr. Khadkaban will evaluate your tumor's size and location to determine if you are a candidate for minimally invasive surgery.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Expert Thoracic Oncology Care</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">If you have been diagnosed with a lung or chest tumor, or need a second opinion on your scans, schedule a consultation with our expert team today.</p>
+            <a href="appointment.html" class="btn"><i class="fa-brands fa-whatsapp"></i> Book Your Appointment</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

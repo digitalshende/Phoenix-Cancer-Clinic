@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced AI-Assisted Diagnosis | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Discover how Phoenix Cancer Clinic uses Advanced AI-Assisted Diagnosis to empower doctors with data-driven insights for precise cancer treatment planning in Satara.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Additional specific styles for the AI Diagnosis page */
+        .ai-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .ai-banner p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+        
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+        .benefit-list li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .benefit-list li i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 3px;
+        }
+        .benefit-list li div strong {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        .benefit-list li div span {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .process-step {
+            text-align: center; 
+            position: relative; 
+            padding: 20px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-bottom: 3px solid var(--secondary);
+        }
+        .process-step .step-num {
+            width: 50px; 
+            height: 50px; 
+            background: var(--primary); 
+            color: white;
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            margin: 0 auto 15px auto;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(to right, #f4f7f2, #ffffff);
+            border-left: 5px solid var(--secondary);
+            padding: 30px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Advanced AI-Assisted Diagnosis</h2>
+        <p class="page-subtitle">The Future of Cancer Care is Here</p>
+
+        <!-- HERO BANNER -->
+        <div class="ai-banner">
+            <h2><i class="fa-solid fa-microchip"></i> AI + Doctor's Experience = Accurate Diagnosis</h2>
+            <p>At Phoenix Cancer Clinic, we leverage Artificial Intelligence to assist our oncologists in making precise diagnoses and formulating the best treatment plans. We believe in combining the power of machine learning with human empathy and surgical expertise.</p>
+        </div>
+
+        <!-- CORE FEATURES -->
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-file-medical-alt"></i>
+                <h3>AI-Assisted Reports</h3>
+                <p>Our AI systems analyze pathology and radiology reports to highlight critical markers and anomalies, ensuring no detail is missed during the diagnosis phase.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-book-medical"></i>
+                <h3>Research & Guidelines</h3>
+                <p>AI helps us instantly cross-reference patient data with the latest global oncological research and clinical guidelines to ensure evidence-based treatment.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-notes-medical"></i>
+                <h3>Treatment Planning</h3>
+                <p>By simulating potential outcomes, AI assists the surgical team in planning complex procedures and predicting the best course of action for your specific case.</p>
+            </div>
+        </div>
+
+        <!-- HOW AI ASSISTS THE DOCTOR -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 60px;">How AI Assists Dr. Khadkaban</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Technology that empowers medical expertise</p>
+        
+        <div class="grid-4">
+            <div class="process-step">
+                <div class="step-num"><i class="fa-solid fa-upload"></i></div>
+                <h4>1. Data Input</h4>
+                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Your medical history, blood tests, and scans are securely digitized.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h4>2. Pattern Recognition</h4>
+                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">AI cross-references your data with millions of anonymous cancer cases globally.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num"><i class="fa-solid fa-lightbulb"></i></div>
+                <h4>3. Highlighting Risks</h4>
+                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">The system flags potential anomalies or high-risk areas that might require closer inspection.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num"><i class="fa-solid fa-user-doctor"></i></div>
+                <h4>4. Doctor's Review</h4>
+                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Dr. Khadkaban reviews the AI findings with his surgical expertise to make the final diagnosis.</p>
+            </div>
+        </div>
+
+        <!-- HOW IT HELPS YOU (Text + Image) -->
+        <div class="grid-2" style="margin-top: 60px; align-items: center;">
+            <div>
+                <h3 style="color: var(--primary); font-size: 1.8rem; margin-bottom: 20px;">How It Helps You</h3>
+                <p style="font-size: 1.05rem; color: var(--gray); margin-bottom: 20px; line-height: 1.8;">
+                    The integration of AI does not replace the doctor; instead, it empowers Dr. Khadkaban with data-driven insights. This powerful combination leads to:
+                </p>
+                <ul class="benefit-list">
+                    <li>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <div>
+                            <strong>Earlier Detection</strong>
+                            <span>Catching subtle abnormalities in scans that the human eye might miss, leading to earlier intervention.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <div>
+                            <strong>More Accurate Staging</strong>
+                            <span>Precisely determining how far the cancer has spread, which is crucial for choosing the right treatment.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-dna"></i>
+                        <div>
+                            <strong>Highly Personalized Protocols</strong>
+                            <span>Tailoring your treatment plan based on complex data patterns, rather than a one-size-fits-all approach.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-face-smile"></i>
+                        <div>
+                            <strong>Better Patient Outcomes</strong>
+                            <span>Ultimately, combining AI precision with human care leads to safer surgeries and faster recoveries.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!-- Using a relevant tech/medical image -->
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Technology in Medicine" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow);">
+            </div>
+        </div>
+
+        <!-- REASSURANCE BOX -->
+        <div class="highlight-box">
+            <h4 style="color: var(--secondary); margin-bottom: 10px; font-size: 1.3rem;"><i class="fa-solid fa-shield-heart"></i> Human Touch, Technological Edge</h4>
+            <p style="color: var(--gray); line-height: 1.7; margin-bottom: 0;">
+                At Phoenix Cancer Clinic, we understand that behind every scan and report is a human being. Our AI tools are designed to support our medical team, allowing us to spend more time focusing on what matters most: <strong>your comfort, your treatment, and your recovery.</strong>
+            </p>
+        </div>
+
+        <!-- CALL TO ACTION -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Experience the Future of Cancer Care</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Get an accurate, AI-assisted review of your medical reports and a personalized treatment plan from Dr. Khadkaban.</p>
+            <a href="appointment.html" class="btn"><i class="fa-solid fa-calendar-check"></i> Book Your Consultation</a>
+        </div>
+
+    </main>
+
+     <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

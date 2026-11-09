@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorectal Cancer Surgery | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Expert colon and rectal cancer care at Phoenix Cancer Clinic, Satara. Advanced surgical options including Hemicolectomy, Anterior Resection, and APR by Dr. Dhiraj Khadkaban.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Specific styles for the Colorectal Cancer page */
+        .procedure-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+            transition: var(--transition);
+            height: 100%;
+        }
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .procedure-card i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .procedure-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+        .procedure-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .symptom-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .symptom-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--gray);
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .symptom-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+        }
+        .faq-item h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .stoma-highlight {
+            background: linear-gradient(to right, #fdfbf9, #ffffff);
+            border-left: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 0 10px 10px 0;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="page-title">Colorectal Cancer Surgery</h2>
+        <p class="page-subtitle">Colon & Rectal Cancer Care</p>
+
+        <!-- Intro Section -->
+        <div class="card" style="margin-bottom: 40px; border-top: none; border-left: 4px solid var(--secondary); background: linear-gradient(to right, #f4f7f2, #ffffff);">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray); margin-bottom: 15px;">
+                Colorectal cancer (cancer of the colon or rectum) is one of the most treatable cancers when detected early. Surgery is the primary treatment, and the exact procedure depends on the size, location, and stage of the tumor.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray);">
+                At Phoenix Cancer Clinic, Dr. Khadkaban specializes in both traditional open surgeries and advanced laparoscopic (minimally invasive) techniques to remove colorectal tumors, ensuring complete cancer clearance while helping you return to your normal life as quickly as possible.
+            </p>
+        </div>
+
+        <!-- Symptoms & Risk Factors -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Signs, Symptoms & Risk Factors</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Don't ignore the warning signs</p>
+
+        <div class="grid-2" style="margin-bottom: 50px;">
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-triangle-exclamation"></i> When to see a doctor:</h4>
+                <ul class="symptom-list">
+                    <li><i class="fa-solid fa-circle-dot"></i> A persistent change in your bowel habits (diarrhea, constipation, or narrowing of the stool) lasting more than a few weeks.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Rectal bleeding or blood in your stool (bright red or very dark).</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Persistent abdominal discomfort, such as cramps, gas, or pain.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> A feeling that your bowel doesn't empty completely.</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Unexplained weight loss or fatigue.</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-ban"></i> Major Risk Factors:</h4>
+                <ul class="symptom-list">
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Age:</strong> Risk increases significantly after age 50.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Diet:</strong> High in red/processed meats and low in fiber.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Lifestyle:</strong> Obesity, sedentary lifestyle, smoking, and heavy alcohol use.</li>
+                    <li style="background: transparent; box-shadow: none; padding: 5px 0;"><i class="fa-solid fa-caret-right"></i> <strong>Family History:</strong> A history of colorectal cancer or polyps in close relatives.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Surgical Procedures (Grid) -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 40px;">Surgical Procedures Offered</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Tailored surgery based on tumor location</p>
+
+        <div class="grid-3">
+            <div class="procedure-card">
+                <i class="fa-solid fa-scissors"></i>
+                <h3>Right/Left Hemicolectomy</h3>
+                <p>If the tumor is located in the right or left side of the colon, this procedure is performed. It involves removing the affected portion of the colon along with nearby lymph nodes, and then reconnecting the healthy ends of the bowel (anastomosis).</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <h3>Anterior Resection (AR)</h3>
+                <p>Often used for tumors in the upper rectum or sigmoid colon. The surgeon removes the diseased section of the rectum and sigmoid colon, and then performs a primary anastomosis (rejoining the healthy ends). This procedure often preserves normal bowel function without the need for a permanent bag.</p>
+            </div>
+            
+            <div class="procedure-card">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Abdominoperineal Resection (APR)</h3>
+                <p>Reserved for very low rectal cancers located near the anus. It is a more extensive surgery involving the removal of the rectum, anus, and surrounding tissues. Because the anal sphincter is removed, this procedure requires a permanent colostomy (stoma).</p>
+            </div>
+        </div>
+
+        <!-- Stoma Highlight Box (Addressing Fears) -->
+        <div class="stoma-highlight">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fa-solid fa-hands-holding-circle"></i> Understanding Colostomies & Stoma Care</h3>
+            <p style="color: var(--gray); line-height: 1.7; margin-bottom: 15px; font-size: 1.05rem;">
+                The idea of a colostomy bag can be frightening. However, it is important to know that a colostomy is a life-saving procedure that allows you to resume your daily activities. With modern stoma care products, the bag is discreet, odor-free, and easy to manage.
+            </p>
+            <p style="color: var(--gray); line-height: 1.7; font-size: 1.05rem;">
+                At Phoenix Cancer Clinic, we don't just perform the surgery; we provide comprehensive <strong>stoma care education and support</strong>. Our team will teach you or your caregiver exactly how to clean, change, and manage the colostomy before you leave the hospital, ensuring you feel confident and independent.
+            </p>
+        </div>
+
+        <!-- FAQs -->
+        <h3 class="page-title" style="font-size: 1.8rem; margin-top: 50px;">Frequently Asked Questions</h3>
+        <p class="page-subtitle" style="margin-bottom: 30px;">Answering your concerns</p>
+
+        <div class="faq-item">
+            <h4>Will I definitely need a colostomy bag?</h4>
+            <p>No. The majority of colon and upper rectal cancers can be treated with surgery that reconnects the bowel, avoiding a permanent bag. Only very low rectal tumors (where the sphincter muscle is involved) require a permanent colostomy (APR).</p>
+        </div>
+        <div class="faq-item">
+            <h4>How will my diet change after colon surgery?</h4>
+            <p>Initially, you will be on a clear liquid diet and progress slowly. You may be advised to avoid high-fiber foods, carbonated drinks, and gas-producing foods for a few weeks to allow your bowel to heal. We provide a detailed post-operative dietary guide.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is colorectal surgery done with keyhole (laparoscopic) techniques?</h4>
+            <p>Yes, whenever possible. Laparoscopic surgery for colon and rectal cancer offers smaller incisions, less pain, quicker return of bowel function, and a shorter hospital stay. Dr. Khadkaban will evaluate your specific case to determine if you are a suitable candidate.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-about" style="background: var(--light); border: 2px dashed var(--secondary); padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Take the Next Step</h3>
+            <p style="margin-bottom: 25px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">If you have been diagnosed with colon or rectal cancer, or need a second opinion regarding your surgical options, our team is here to provide expert, compassionate care.</p>
+            <a href="appointment.html" class="btn"><i class="fa-brands fa-whatsapp"></i> Book Your Appointment</a>
+        </div>
+
+    </main>
+
+   <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

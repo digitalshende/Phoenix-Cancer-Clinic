@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Policies | Phoenix Cancer Clinic</title>
+    <meta name="description" content="Read the privacy policy, medical disclaimer, and insurance & billing information for Phoenix Cancer Clinic, Satara.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Additional styles specifically for the Policies page */
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling when clicking anchor links */
+        }
+        .policy-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .policy-nav a {
+            background: var(--white);
+            color: var(--dark);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+        .policy-nav a:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .policy-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            scroll-margin-top: 100px; /* Offsets scroll so header doesn't cover title */
+            border-top: 4px solid var(--secondary);
+        }
+        .policy-section h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 2px dashed #eee;
+            padding-bottom: 15px;
+        }
+        .policy-section h3 {
+            color: var(--dark);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .policy-section p, .policy-section li {
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .policy-section ul {
+            padding-left: 20px;
+        }
+        
+        .info-alert {
+            background: #fdfbf9;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .info-alert p {
+            margin: 0;
+            color: var(--dark);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER (Same as rest of site) -->
+    <header>
+        <div class="top-bar">
+            <div><i class="fa-solid fa-phone"></i> +91 9819563249</div>
+            <div> <a href="appointment.html" class="btn" style="padding: 8px 20px; color: white;">Book Appointment</a></div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+             
+                <img src="img/logo.png" width="75" height="75">
+            
+                <div class="logo-text"><h1>Phoenix</h1><span>Cancer Clinic</span></div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="doctor.html">Our Doctor</a></li>
+                    <li><a href="ai-diagnosis.html">AI Diagnosis</a></li>
+					     <li><a href="treatments.html">Treatments</a></li>
+						   <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a>Cancers We Treat <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="breast-cancer.html">Breast Cancer</a></li>
+                            <li><a href="mouth-cancer.html">Oral & Mouth Cancer</a></li>
+                            <li><a href="lung-cancer.html">Lung & Chest Cancer</a></li>
+                            <li><a href="gi-cancer.html">Gastrointestinal Cancers</a></li>
+                            <li><a href="colorectal-cancer.html">Colorectal Cancer</a></li>
+                            <li><a href="head-neck-cancer.html">Head & Neck Cancers</a></li>
+                        </ul>
+                    </li>
+               
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="page-title">Patient Policies & Information</h2>
+        <p class="page-subtitle">Transparency, Privacy, and Trust</p>
+
+        <!-- Quick Navigation -->
+        <div class="policy-nav">
+            <a href="#privacy"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
+            <a href="#disclaimer"><i class="fa-solid fa-file-medical"></i> Medical Disclaimer</a>
+            <a href="#insurance"><i class="fa-solid fa-file-invoice-dollar"></i> Insurance & Billing</a>
+        </div>
+
+        <!-- 1. Privacy Policy Section -->
+        <div class="policy-section" id="privacy">
+            <h2><i class="fa-solid fa-shield-halved" style="color: var(--secondary);"></i> Privacy Policy</h2>
+            <p>At Phoenix Cancer Clinic, we understand that your medical information is deeply personal. We are committed to protecting your privacy and ensuring the confidentiality of your medical records.</p>
+            
+            <h3>1. Information We Collect</h3>
+            <p>We collect information you provide directly to us, including your name, contact details, medical history, biopsy reports, radiology scans (CDs/films), and other health-related data necessary for your diagnosis and treatment.</p>
+            
+            <h3>2. How We Use Your Information</h3>
+            <ul>
+                <li>To provide accurate medical diagnosis and treatment planning.</li>
+                <li>To coordinate with other medical professionals (e.g., medical oncologists, pathologists) involved in your care.</li>
+                <li>To process payments and coordinate with your health insurance provider (if applicable).</li>
+            </ul>
+
+            <h3>3. AI-Assisted Diagnosis & Data Security</h3>
+            <div class="info-alert">
+                <p><i class="fa-solid fa-microchip" style="color: var(--primary);"></i> <strong>How AI uses your data:</strong> Our AI tools analyze your anonymized medical data to cross-reference global research databases. The AI <strong>does not</strong> store your personal identity. All final medical decisions are made by Dr. Khadkaban.</p>
+            </div>
+            <p>We implement strict administrative, technical, and physical security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
+        </div>
+
+        <!-- 2. Medical Disclaimer Section -->
+        <div class="policy-section" id="disclaimer" style="border-top-color: var(--primary);">
+            <h2><i class="fa-solid fa-file-medical" style="color: var(--primary);"></i> Medical Disclaimer</h2>
+            <p>The information provided on the Phoenix Cancer Clinic website is for general educational and informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment.</p>
+            
+            <div class="info-alert" style="border-left-color: #d9534f; background: #fff5f5;">
+                <p style="color: #d9534f;"><strong>Always seek the advice of a qualified physician or other qualified health provider with any questions you may have regarding a medical condition.</strong> Never disregard professional medical advice or delay in seeking it because of something you have read on this website.</p>
+            </div>
+            
+            <p>While we utilize Advanced AI-Assisted Diagnosis to empower our medical team, AI is a supportive tool and does not replace the clinical judgment, expertise, or experience of a human doctor. All treatment plans and surgical decisions are made solely by Dr. Khadkaban.</p>
+            <p>If you think you may have a medical emergency, call our clinic immediately or go to the nearest emergency room.</p>
+        </div>
+
+        <!-- 3. Insurance & Billing Section -->
+        <div class="policy-section" id="insurance" style="border-top-color: var(--accent);">
+            <h2><i class="fa-solid fa-file-invoice-dollar" style="color: var(--accent);"></i> Insurance & Billing</h2>
+            <p>We believe in transparent and ethical billing. Cancer treatment is a significant investment in your health, and we want to ensure there are no hidden surprises.</p>
+            
+            <h3>Cashless Treatment & Insurance</h3>
+            <p>Phoenix Cancer Clinic works with leading health insurance providers and Third-Party Administrators (TPAs) to facilitate cashless hospitalization for eligible patients. </p>
+            <ul>
+                <li>Please bring your health insurance card and policy details during your first consultation.</li>
+                <li>Our administrative team will help you verify your coverage and obtain pre-authorization for surgeries.</li>
+                <li>We also assist patients eligible for government schemes (such as Ayushman Bharat) where applicable.</li>
+            </ul>
+
+            <h3>Payment Options</h3>
+            <p>For treatments not covered by insurance, we offer flexible payment options. We accept cash, credit/debit cards, UPI, and bank transfers.</p>
+
+            <h3>Cost Estimates</h3>
+            <p>Before any major surgery or treatment plan begins, Dr. Khadkaban and our billing team will provide you with a clear, written estimate of the expected costs. If your treatment plan changes, we will update you promptly.</p>
+            
+            <p style="margin-top: 30px; font-weight: 500; color: var(--dark);"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> For billing or insurance inquiries, please contact our front desk at <strong>+91 9819563249</strong>.</p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER (Same as rest of site) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Phoenix Cancer Clinic</h4>
+                <p>Dedicated to providing comprehensive and modern oncology care with advanced AI-assisted diagnosis.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="doctor.html">Dr. Dhiraj Khadkaban</a>
+                <a href="ai-diagnosis.html">AI Technology</a>
+                <a href="treatments.html">Surgical Procedures</a>
+            </div>
+            <div class="footer-col">
+                <h4>Patient Info</h4>
+                <a href="resources.html">Patient Resources</a>
+                <a href="policies.html">Privacy & Disclaimer</a>
+                <a href="policies.html#insurance">Insurance & Billing</a>
+                <a href="appointment.html">Book Appointment</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shahu Stadium, 476, Opp. Pushpak Hotel, Suryawanshi Colony, Sadar Bazar, Satara - 415002</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9819563249</p>
+                <p><i class="fa-solid fa-envelope"></i> dsk_1980@yahoo.com</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">Sunday: Closed</p>
+            </div>
+        </div>
+          <div class="footer-bottom">
+            &copy; 2026 Phoenix Cancer Clinic, Satara. All Rights Reserved.
+			<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank" class="style1">Satish Shende</a></strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
